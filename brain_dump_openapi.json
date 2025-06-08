@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "BrainDump Webhook",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/1si4mo4dasdumfcwccsvpiacl6bnw5ua": {
+      "post": {
+        "operationId": "addToBrainDump",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "entry": { "type": "string" }
+                },
+                "required": ["entry"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "OK" }
+        }
+      }
+    }
+  },
+  "servers": [
+    { "url": "https://hook.us2.make.com" }
+  ]
+}
