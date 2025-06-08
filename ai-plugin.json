@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "BrainDump Webhook",
+  "name_for_model": "brain_dump",
+  "description_for_human": "Add entries to your BrainDump sheet via Make.com",
+  "description_for_model": "Use this to POST new entries to the BrainDump Make webhook",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://<YOUR_GITHUB_USERNAME>.github.io/brain-dump-plugin/brain_dump_openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://<YOUR_GITHUB_USERNAME>.github.io/brain-dump-plugin/logo.png",
+  "contact_email": "you@example.com",
+  "legal_info_url": "https://example.com/legal"
+}
